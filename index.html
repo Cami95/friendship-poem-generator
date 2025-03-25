@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@2.1.1/dist/core.js"></script>
     <title>My Friendship Poems</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem"
@@ -31,11 +32,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="friendship-poem">
-          I will not play at tug o’ war,
-          <br />
-          I'd rather play at hug o’ war.
-        </div>
+        <div class="friendship-poem" id="friendship-poem"></div>
       </main>
 
       <footer>
