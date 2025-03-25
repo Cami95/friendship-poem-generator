@@ -4,48 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>My Friendship Poems</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to my AI Friendship Poem Generator!!!!</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome to my AI Friendship Poem Generator!!!!</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="input-text"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
 
-      <div>
-        I will not play at tug o’ war,
-        <br />
-        I'd rather play at hug o’ war.
-      </div>
-    </main>
+        <div class="friendship-poem">
+          I will not play at tug o’ war,
+          <br />
+          I'd rather play at hug o’ war.
+        </div>
+      </main>
 
-    <footer>
-      This AI generator was coded by
-      <a href="https://github.com/Cami95" target="_blank"> Cami Johnson </a>
-      and it is open sourced on
-      <a
-        href="https://github.com/Cami95/friendship-poem-generator"
-        target="_blank"
-      >
-        Github
-      </a>
-      and is hosted on
-      <a href="https://friendshippoemgenerator.netlify.app/" target="_blank">
-        Netlify </a
-      >.
-    </footer>
-
+      <footer>
+        This AI generator was coded by
+        <a href="https://github.com/Cami95" target="_blank"> Cami Johnson </a>
+        and it is open sourced on
+        <a
+          href="https://github.com/Cami95/friendship-poem-generator"
+          target="_blank"
+        >
+          Github
+        </a>
+        and is hosted on
+        <a href="https://friendshippoemgenerator.netlify.app/" target="_blank">
+          Netlify </a
+        >.
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
