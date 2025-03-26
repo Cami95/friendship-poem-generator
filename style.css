@@ -66,3 +66,7 @@ footer {
 a {
   color: rgb(165, 25, 165);
 }
+
+.friendship-poem strong {
+  color: pink;
+}
