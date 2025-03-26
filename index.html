@@ -17,24 +17,27 @@
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to my AI Friendship Poem Generator!!!!</h1>
+        <h1>Welcome to my AI Poem Generator!!!!</h1>
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="input-text"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-wrapper">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="input-text"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">Ex: Friendship, Pizza, or Dogs</div>
+        </div>
 
-        <div class="friendship-poem" id="friendship-poem"></div>
+        <div class="friendship-poem hidden" id="friendship-poem"></div>
       </main>
 
       <footer>

@@ -16,14 +16,14 @@ function generatePoem(event) {
 
   let context =
     "You are an extrovert that is able to my friends very easily wherever you go. You also love to write short poems. Please write a 4 line poem. Please follow the user instructions.";
-  let prompt = `User instructions: Generate a poem about ${instructionsInput.value}. Please sign with "Shecodes AI" at the end of the poem .`;
+  let prompt = `User instructions: Generate a poem about ${instructionsInput.value}. Please sign with "Shecodes AI" at the end of the poem . Let the poem stay there until prompted with another topic.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating poem");
-  console.log(`prompt:${prompt}`);
-  console.log(`context:${context}`);
-
   axios.get(apiUrl).then(displayPoem);
+
+  let poemElement = document.querySelector("#friendship-poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `Generating the poem about ${instructionsInput.value}`;
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
